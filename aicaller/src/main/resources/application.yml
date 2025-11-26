@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aiplatform
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+
+openai:
+  apiKey: ${OPENAI_API_KEY:}
+twilio:
+  webhookSecret: ${TWILIO_WEBHOOK_SECRET:}
+jwt:
+  secret: change_this_secret_for_dev
+  expirationMs: 3600000

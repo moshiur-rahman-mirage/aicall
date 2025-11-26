@@ -1,0 +1,52 @@
+# =========================
+# Operating System & IDEs
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.log
+
+# =========================
+# Security & Secrets
+# =========================
+# Never commit environment config files containing keys/passwords
+.env
+.env.local
+.env.*.local
+*.credentials
+secrets/
+
+# =========================
+# Backend (aicaller folder)
+# =========================
+# Assuming Java/Maven/Gradle based on Lombok usage
+aicaller/target/
+aicaller/build/
+aicaller/out/
+aicaller/.gradle/
+aicaller/bin/
+aicaller/*.class
+aicaller/*.jar
+aicaller/*.war
+aicaller/help.md
+
+# =========================
+# Frontend (frontend folder)
+# =========================
+# Standard Node/JS excludes
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/coverage/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/.eslintcache
+
+# =========================
+# Docker
+# =========================
+# Keep docker-compose.yml, but ignore local overrides
+docker-compose.override.yml
